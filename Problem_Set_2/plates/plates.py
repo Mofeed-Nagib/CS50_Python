@@ -11,7 +11,7 @@ def is_valid(s):
         return False
     elif not s[0:2].isalpha():
         return False
-    elif not s[2:].isalnum():
+    elif len(s) > 2 and not s[2:].isalnum():
         return False
     
     flag = False
